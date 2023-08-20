@@ -1,6 +1,6 @@
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   // enabled: process.env.ANALYZE === "true",
-  enabled: true,
+  enabled: false,
 });
 
 const threeRegExp = /[\\/]node_modules[\\/]three[\\/](src|examples)[\\/]/;
@@ -33,5 +33,5 @@ const nextConfig = {
   },
 };
 
-module.exports = withBundleAnalyzer(nextConfig);
-// module.exports = nextConfig;
+// module.exports = withBundleAnalyzer(nextConfig);
+module.exports = nextConfig;
