@@ -7,18 +7,6 @@ const ThreeRenderer = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const init = async () => {
-    // const { WebGLRenderer } = await ThreeModule.getModule("WebGLRenderer");
-    // const { Scene } = await ThreeModule.getModule("Scene");
-    // const { PerspectiveCamera } = await ThreeModule.getModule(
-    //   "PerspectiveCamera"
-    // );
-    // const { Mesh } = await ThreeModule.getModule("Mesh");
-    // const { PlaneGeometry } = await ThreeModule.getModule("PlaneGeometry");
-    // const { MeshBasicMaterial } = await ThreeModule.getModule(
-    //   "MeshBasicMaterial"
-    // );
-    // const { OrbitControls } = await ThreeModule.getModule("OrbitControls");
-
     const [
       WebGLRendererPromise,
       ScenePromise,
