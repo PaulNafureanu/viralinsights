@@ -21,11 +21,14 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@types/three": "^0.155.0",
+    "@next/bundle-analyzer": "^13.4.19",
     "@types/node": "20.5.1",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
+    "@types/three": "^0.155.0",
+    "@types/webpack": "^5.28.1",
     "eslint": "8.47.0",
-    "eslint-config-next": "13.4.19"
+    "eslint-config-next": "13.4.19",
+    "webpack": "^5.88.2"
   }
 }

@@ -3,13 +3,49 @@ import ThreeModule from "@/lib/three/ThreeModule";
 import { useRef, useEffect } from "react";
 
 const ThreeRenderer = () => {
+  console.time("TR");
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const init = async () => {
-    const Three = await ThreeModule.getModule("Three");
-    const { OrbitControls } = await ThreeModule.getModule("OrbitControls");
+    // const { WebGLRenderer } = await ThreeModule.getModule("WebGLRenderer");
+    // const { Scene } = await ThreeModule.getModule("Scene");
+    // const { PerspectiveCamera } = await ThreeModule.getModule(
+    //   "PerspectiveCamera"
+    // );
+    // const { Mesh } = await ThreeModule.getModule("Mesh");
+    // const { PlaneGeometry } = await ThreeModule.getModule("PlaneGeometry");
+    // const { MeshBasicMaterial } = await ThreeModule.getModule(
+    //   "MeshBasicMaterial"
+    // );
+    // const { OrbitControls } = await ThreeModule.getModule("OrbitControls");
 
-    const renderer = new Three.WebGLRenderer({
+    const [
+      WebGLRendererPromise,
+      ScenePromise,
+      PerspectiveCameraPromise,
+      MeshPromise,
+      PlaneGeometryPromise,
+      MeshBasicMaterialPromise,
+      OrbitControlsPromise,
+    ] = await Promise.all([
+      ThreeModule.getModule("WebGLRenderer"),
+      ThreeModule.getModule("Scene"),
+      ThreeModule.getModule("PerspectiveCamera"),
+      ThreeModule.getModule("Mesh"),
+      ThreeModule.getModule("PlaneGeometry"),
+      ThreeModule.getModule("MeshBasicMaterial"),
+      ThreeModule.getModule("OrbitControls"),
+    ]);
+
+    const { WebGLRenderer } = WebGLRendererPromise;
+    const { Scene } = ScenePromise;
+    const { PerspectiveCamera } = PerspectiveCameraPromise;
+    const { Mesh } = MeshPromise;
+    const { PlaneGeometry } = PlaneGeometryPromise;
+    const { MeshBasicMaterial } = MeshBasicMaterialPromise;
+    const { OrbitControls } = OrbitControlsPromise;
+
+    const renderer = new WebGLRenderer({
       antialias: true,
       canvas: canvasRef.current!,
     });
@@ -17,8 +53,8 @@ const ThreeRenderer = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.pixelRatio = window.devicePixelRatio;
 
-    const scene = new Three.Scene();
-    const camera = new Three.PerspectiveCamera(
+    const scene = new Scene();
+    const camera = new PerspectiveCamera(
       75,
       window.innerWidth / window.innerHeight,
       0.01,
@@ -29,9 +65,9 @@ const ThreeRenderer = () => {
     const controls = new OrbitControls(camera, canvasRef.current!);
     controls.update();
 
-    const plane = new Three.Mesh(
-      new Three.PlaneGeometry(10, 10),
-      new Three.MeshBasicMaterial({ wireframe: true, color: 0xffff00 })
+    const plane = new Mesh(
+      new PlaneGeometry(10, 10),
+      new MeshBasicMaterial({ wireframe: true, color: 0xffff00 })
     );
     scene.add(plane);
 
@@ -44,13 +80,19 @@ const ThreeRenderer = () => {
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     });
+
+    console.timeEnd("TR");
   };
 
   useEffect(() => {
     init();
   }, []);
 
-  return <canvas ref={canvasRef} />;
+  return (
+    <div>
+      <canvas ref={canvasRef} />
+    </div>
+  );
 };
 
 export default ThreeRenderer;
