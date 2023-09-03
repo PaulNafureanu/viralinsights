@@ -1,0 +1,450 @@
+{
+  "atlas": {
+    "width": 5120,
+    "height": 6144
+  },
+  "textures": {
+    "Texture0": {
+      "oldImageUsed": "material_0_baseColor",
+      "linkedMaterials": ["material_0"],
+      "offset": [0, 0],
+      "repeat": [0.2, 0.3333333333333333],
+      "position": [0, 0],
+      "scale": [1024, 2048]
+    },
+    "Texture17": {
+      "oldImageUsed": "930_chromes_baseColor",
+      "linkedMaterials": ["930_chromes"],
+      "offset": [0.2, 0],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [1024, 0],
+      "scale": [1024, 1024]
+    },
+    "Texture18": {
+      "oldImageUsed": "930_chromes_metallicRoughness",
+      "linkedMaterials": ["930_chromes"],
+      "offset": [0.4, 0],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [2048, 0],
+      "scale": [1024, 1024]
+    },
+    "Texture12": {
+      "oldImageUsed": "930_lights_baseColor",
+      "linkedMaterials": ["930_lights"],
+      "offset": [0.6, 0],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [3072, 0],
+      "scale": [1024, 1024]
+    },
+    "Texture13": {
+      "oldImageUsed": "930_lights_metallicRoughness",
+      "linkedMaterials": ["930_lights"],
+      "offset": [0.8, 0],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [4096, 0],
+      "scale": [1024, 1024]
+    },
+    "Texture14": {
+      "oldImageUsed": "930_lights_normal",
+      "linkedMaterials": ["930_lights", "930_lights_refraction"],
+      "offset": [0.2, 0.16666666666666666],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [1024, 1024],
+      "scale": [1024, 1024]
+    },
+    "Texture1": {
+      "oldImageUsed": "930_plastics_baseColor",
+      "linkedMaterials": ["930_plastics"],
+      "offset": [0.4, 0.16666666666666666],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [2048, 1024],
+      "scale": [1024, 1024]
+    },
+    "Texture2": {
+      "oldImageUsed": "930_plastics_metallicRoughness",
+      "linkedMaterials": ["930_plastics"],
+      "offset": [0.6, 0.16666666666666666],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [3072, 1024],
+      "scale": [1024, 1024]
+    },
+    "Texture6": {
+      "oldImageUsed": "930_rim_baseColor",
+      "linkedMaterials": ["930_rim"],
+      "offset": [0.8, 0.16666666666666666],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [4096, 1024],
+      "scale": [1024, 1024]
+    },
+    "Texture7": {
+      "oldImageUsed": "930_rim_metallicRoughness",
+      "linkedMaterials": ["930_rim"],
+      "offset": [0, 0.3333333333333333],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [0, 2048],
+      "scale": [1024, 1024]
+    },
+    "Texture8": {
+      "oldImageUsed": "930_rim_normal",
+      "linkedMaterials": ["930_rim"],
+      "offset": [0.2, 0.3333333333333333],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [1024, 2048],
+      "scale": [1024, 1024]
+    },
+    "Texture3": {
+      "oldImageUsed": "930_stickers_baseColor",
+      "linkedMaterials": ["930_stickers"],
+      "offset": [0.4, 0.3333333333333333],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [2048, 2048],
+      "scale": [1024, 1024]
+    },
+    "Texture9": {
+      "oldImageUsed": "930_tire_baseColor",
+      "linkedMaterials": ["930_tire"],
+      "offset": [0.6, 0.3333333333333333],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [3072, 2048],
+      "scale": [1024, 1024]
+    },
+    "Texture10": {
+      "oldImageUsed": "930_tire_metallicRoughness",
+      "linkedMaterials": ["930_tire"],
+      "offset": [0.8, 0.3333333333333333],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [4096, 2048],
+      "scale": [1024, 1024]
+    },
+    "Texture11": {
+      "oldImageUsed": "930_tire_normal",
+      "linkedMaterials": ["930_tire"],
+      "offset": [0, 0.5],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [0, 3072],
+      "scale": [1024, 1024]
+    },
+    "Texture25": {
+      "oldImageUsed": "930_wunderbaum_baseColor",
+      "linkedMaterials": ["930_wunderbaum"],
+      "offset": [0.2, 0.5],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [1024, 3072],
+      "scale": [1024, 1024]
+    },
+    "Texture26": {
+      "oldImageUsed": "930_wunderbaum_metallicRoughness",
+      "linkedMaterials": ["930_wunderbaum"],
+      "offset": [0.4, 0.5],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [2048, 3072],
+      "scale": [1024, 1024]
+    },
+    "Texture23": {
+      "oldImageUsed": "coat_baseColor",
+      "linkedMaterials": ["coat"],
+      "offset": [0.6, 0.5],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [3072, 3072],
+      "scale": [1024, 1024]
+    },
+    "Texture24": {
+      "oldImageUsed": "coat_metallicRoughness",
+      "linkedMaterials": ["coat"],
+      "offset": [0.8, 0.5],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [4096, 3072],
+      "scale": [1024, 1024]
+    },
+    "Texture15": {
+      "oldImageUsed": "glass_baseColor",
+      "linkedMaterials": ["glass"],
+      "offset": [0, 0.6666666666666666],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [0, 4096],
+      "scale": [1024, 1024]
+    },
+    "Texture16": {
+      "oldImageUsed": "glass_metallicRoughness",
+      "linkedMaterials": ["glass"],
+      "offset": [0.2, 0.6666666666666666],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [1024, 4096],
+      "scale": [1024, 1024]
+    },
+    "Texture20": {
+      "oldImageUsed": "paint_clearcoat",
+      "linkedMaterials": ["paint"],
+      "offset": [0.4, 0.6666666666666666],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [2048, 4096],
+      "scale": [1024, 1024]
+    },
+    "Texture22": {
+      "oldImageUsed": "paint_clearcoat_normal",
+      "linkedMaterials": ["paint", "coat"],
+      "offset": [0.6, 0.6666666666666666],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [3072, 4096],
+      "scale": [1024, 1024]
+    },
+    "Texture21": {
+      "oldImageUsed": "paint_clearcoat_roughness",
+      "linkedMaterials": ["paint"],
+      "offset": [0.8, 0.6666666666666666],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [4096, 4096],
+      "scale": [1024, 1024]
+    },
+    "Texture19": {
+      "oldImageUsed": "paint_metallicRoughness",
+      "linkedMaterials": ["paint"],
+      "offset": [0, 0.8333333333333334],
+      "repeat": [0.2, 0.16666666666666666],
+      "position": [0, 5120],
+      "scale": [1024, 1024]
+    },
+    "Texture4": {
+      "oldImageUsed": "plate_baseColor",
+      "linkedMaterials": ["plate"],
+      "offset": [0.2, 0.8333333333333334],
+      "repeat": [0.2, 0.041666666666666664],
+      "position": [1024, 5120],
+      "scale": [1024, 256]
+    },
+    "Texture5": {
+      "oldImageUsed": "plate_normal",
+      "linkedMaterials": ["plate"],
+      "offset": [0.4, 0.8333333333333334],
+      "repeat": [0.2, 0.041666666666666664],
+      "position": [2048, 5120],
+      "scale": [1024, 256]
+    }
+  },
+  "textureTypes": [
+    "baseColorTexture",
+    "metallicRoughnessTexture",
+    "normalTexture",
+    "occlusionTexture",
+    "clearcoatNormalTexture",
+    "clearcoatRoughnessTexture",
+    "clearcoatTexture"
+  ],
+  "materials": {
+    "material_0": {
+      "texturesUsed": [
+        {
+          "name": "Texture0",
+          "type": "baseColorTexture",
+          "index": 0
+        }
+      ]
+    },
+    "930_plastics": {
+      "texturesUsed": [
+        {
+          "name": "Texture1",
+          "type": "baseColorTexture",
+          "index": 1
+        },
+        {
+          "name": "Texture2",
+          "type": "metallicRoughnessTexture",
+          "index": 2
+        }
+      ]
+    },
+    "930_stickers": {
+      "texturesUsed": [
+        {
+          "name": "Texture3",
+          "type": "baseColorTexture",
+          "index": 3
+        }
+      ]
+    },
+    "plate": {
+      "texturesUsed": [
+        {
+          "name": "Texture5",
+          "type": "normalTexture",
+          "index": 5
+        },
+        {
+          "name": "Texture4",
+          "type": "baseColorTexture",
+          "index": 4
+        }
+      ]
+    },
+    "930_rim": {
+      "texturesUsed": [
+        {
+          "name": "Texture8",
+          "type": "normalTexture",
+          "index": 8
+        },
+        {
+          "name": "Texture7",
+          "type": "occlusionTexture",
+          "index": 7
+        },
+        {
+          "name": "Texture6",
+          "type": "baseColorTexture",
+          "index": 6
+        },
+        {
+          "name": "Texture7",
+          "type": "metallicRoughnessTexture",
+          "index": 7
+        }
+      ]
+    },
+    "930_tire": {
+      "texturesUsed": [
+        {
+          "name": "Texture11",
+          "type": "normalTexture",
+          "index": 11
+        },
+        {
+          "name": "Texture10",
+          "type": "occlusionTexture",
+          "index": 10
+        },
+        {
+          "name": "Texture9",
+          "type": "baseColorTexture",
+          "index": 9
+        },
+        {
+          "name": "Texture10",
+          "type": "metallicRoughnessTexture",
+          "index": 10
+        }
+      ]
+    },
+    "930_lights": {
+      "texturesUsed": [
+        {
+          "name": "Texture14",
+          "type": "normalTexture",
+          "index": 14
+        },
+        {
+          "name": "Texture12",
+          "type": "baseColorTexture",
+          "index": 12
+        },
+        {
+          "name": "Texture13",
+          "type": "metallicRoughnessTexture",
+          "index": 13
+        }
+      ]
+    },
+    "glass": {
+      "texturesUsed": [
+        {
+          "name": "Texture15",
+          "type": "baseColorTexture",
+          "index": 15
+        },
+        {
+          "name": "Texture16",
+          "type": "metallicRoughnessTexture",
+          "index": 16
+        }
+      ]
+    },
+    "930_chromes": {
+      "texturesUsed": [
+        {
+          "name": "Texture17",
+          "type": "baseColorTexture",
+          "index": 17
+        },
+        {
+          "name": "Texture18",
+          "type": "metallicRoughnessTexture",
+          "index": 18
+        }
+      ]
+    },
+    "paint": {
+      "texturesUsed": [
+        {
+          "name": "Texture22",
+          "type": "clearcoatNormalTexture",
+          "index": 22
+        },
+        {
+          "name": "Texture21",
+          "type": "clearcoatRoughnessTexture",
+          "index": 21
+        },
+        {
+          "name": "Texture20",
+          "type": "clearcoatTexture",
+          "index": 20
+        },
+        {
+          "name": "Texture19",
+          "type": "occlusionTexture",
+          "index": 19
+        },
+        {
+          "name": "Texture19",
+          "type": "metallicRoughnessTexture",
+          "index": 19
+        }
+      ]
+    },
+    "coat": {
+      "texturesUsed": [
+        {
+          "name": "Texture22",
+          "type": "normalTexture",
+          "index": 22
+        },
+        {
+          "name": "Texture23",
+          "type": "baseColorTexture",
+          "index": 23
+        },
+        {
+          "name": "Texture24",
+          "type": "metallicRoughnessTexture",
+          "index": 24
+        }
+      ]
+    },
+    "black": {
+      "texturesUsed": []
+    },
+    "930_lights_refraction": {
+      "texturesUsed": [
+        {
+          "name": "Texture14",
+          "type": "normalTexture",
+          "index": 14
+        }
+      ]
+    },
+    "930_wunderbaum": {
+      "texturesUsed": [
+        {
+          "name": "Texture25",
+          "type": "baseColorTexture",
+          "index": 25
+        },
+        {
+          "name": "Texture26",
+          "type": "metallicRoughnessTexture",
+          "index": 26
+        }
+      ]
+    }
+  }
+}

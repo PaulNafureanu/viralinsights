@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 # /types
+/public/models/porsche2
 /.pnp
 .pnp.js
 

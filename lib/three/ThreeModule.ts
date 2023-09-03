@@ -12,6 +12,13 @@ class ThreeModule {
     MeshBasicMaterial: () => import("three/src/materials/MeshBasicMaterial"),
     OrbitControls: () => import("three/examples/jsm/controls/OrbitControls"),
     GLTFLoader: () => import("three/examples/jsm/loaders/GLTFLoader"),
+    DracoLoader: () => import("three/examples/jsm/loaders/DRACOLoader"),
+    RGBELoader: () => import("three/examples/jsm/loaders/RGBELoader"),
+    TextureLoader: () => import("three/src/loaders/TextureLoader"),
+    Texture: () => import("three/src/textures/Texture"),
+    Constants: () => import("three/src/constants"),
+    Vector3: () => import("three/src/math/Vector3"),
+    Color: () => import("three/src/math/Color"),
   };
 
   private static Modules: Record<keyof typeof ThreeModule.Imports, any> =
